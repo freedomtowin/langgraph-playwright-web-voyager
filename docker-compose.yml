@@ -1,0 +1,11 @@
+services:
+  langgraph-playwright:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/usr/src/app  # Mount current directory to access notebooks
+    ports:
+      - "8898:6999"     # Map Jupyter port to the host
+    cap_add:
+      - NET_ADMIN

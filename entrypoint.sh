@@ -1,0 +1,1 @@
+jupyter notebook --ip 00.0 --port 6999 --NotebookApp.token='' --NotebookApp.password='' --no-browser --allow-root
